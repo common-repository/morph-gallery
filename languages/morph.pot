@@ -1,0 +1,239 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Morph Gallery\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-16 15:27+0800\n"
+"PO-Revision-Date: 2016-06-16 15:27+0800\n"
+"Last-Translator: Kosinix <kosinix@codefleet.net>\n"
+"Language-Team: kosinix\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.6.7\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../src/MorphGallery/Admin.php:136
+msgid "Morph Gallery"
+msgstr ""
+
+#: ../src/MorphGallery/Admin.php:137
+msgid "Gallery"
+msgstr ""
+
+#: ../src/MorphGallery/Admin.php:138
+msgid "Add Gallery"
+msgstr ""
+
+#: ../src/MorphGallery/Admin.php:139
+msgid "Add New Gallery"
+msgstr ""
+
+#: ../src/MorphGallery/Admin.php:140
+msgid "Edit Gallery"
+msgstr ""
+
+#: ../src/MorphGallery/Admin.php:141
+msgid "New Gallery"
+msgstr ""
+
+#: ../src/MorphGallery/Admin.php:142
+msgid "View Gallery"
+msgstr ""
+
+#: ../src/MorphGallery/Admin.php:143
+msgid "Search Galleries"
+msgstr ""
+
+#: ../src/MorphGallery/Admin.php:144
+msgid "No galleries found"
+msgstr ""
+
+#: ../src/MorphGallery/Admin.php:145
+msgid "No galleries found in Trash"
+msgstr ""
+
+#: ../src/MorphGallery/Admin.php:190 ../src/MorphGallery/Admin.php:193
+#: ../src/MorphGallery/Admin.php:194 ../src/MorphGallery/Admin.php:197
+#: ../src/MorphGallery/Admin.php:198 ../src/MorphGallery/Admin.php:199
+msgid "Gallery updated."
+msgstr ""
+
+#: ../src/MorphGallery/Admin.php:191
+msgid "Custom field updated."
+msgstr ""
+
+#: ../src/MorphGallery/Admin.php:192
+msgid "Custom field deleted."
+msgstr ""
+
+#: ../src/MorphGallery/Admin.php:195
+msgid "Gallery published."
+msgstr ""
+
+#: ../src/MorphGallery/Admin.php:196
+msgid "Gallery saved."
+msgstr ""
+
+#: ../src/MorphGallery/Admin.php:224
+msgid "Items"
+msgstr ""
+
+#: ../src/MorphGallery/Admin.php:233
+msgid "Get Codes"
+msgstr ""
+
+#: ../src/MorphGallery/Admin.php:242
+msgid "Gallery ID"
+msgstr ""
+
+#: ../src/MorphGallery/Admin.php:252
+msgid "Templates"
+msgstr ""
+
+#: ../src/MorphGallery/Admin.php:262
+msgid "Watermark"
+msgstr ""
+
+#: ../src/MorphGallery/Admin.php:271
+msgid "Publish"
+msgstr ""
+
+#: ../src/MorphGallery/Admin.php:427
+msgid "Gallery Name"
+msgstr ""
+
+#: ../src/MorphGallery/Admin.php:428
+msgid "Template"
+msgstr ""
+
+#: ../src/MorphGallery/Admin.php:429
+msgid "ID"
+msgstr ""
+
+#: ../src/MorphGallery/Admin.php:430
+msgid "Shortcode"
+msgstr ""
+
+#: ../src/MorphGallery/AssetLoader.php:94
+msgid "Select an image"
+msgstr ""
+
+#: ../src/MorphGallery/AssetLoader.php:95
+msgid "Select Images - Use Ctrl + Click or Shift + Click"
+msgstr ""
+
+#: ../src/MorphGallery/AssetLoader.php:96
+msgid "Add to Slide"
+msgstr ""
+
+#: ../src/MorphGallery/AssetLoader.php:97
+msgid "Add Items"
+msgstr ""
+
+#: ../src/MorphGallery/AssetLoader.php:98
+msgid "Add Watermark"
+msgstr ""
+
+#: ../src/MorphGallery/Saver.php:220
+msgid "Missing NONCE value."
+msgstr ""
+
+#: ../src/MorphGallery/Saver.php:230
+msgid "Wrong NONCE value."
+msgstr ""
+
+#: ../templates/carousel/views/template-fields.php:3
+#: ../templates/grid/views/template-fields.php:3
+#: ../templates/masonry/views/editor-fields.php:3
+#: ../templates/masonry/views/template-fields.php:3
+msgid "Image Width"
+msgstr ""
+
+#: ../templates/carousel/views/template-fields.php:11
+#: ../templates/grid/views/template-fields.php:11
+#: ../templates/masonry/views/editor-fields.php:11
+#: ../templates/masonry/views/template-fields.php:11
+msgid "Image Height"
+msgstr ""
+
+#: ../templates/carousel/views/template-fields.php:19
+msgid "Scroll Speed"
+msgstr ""
+
+#: ../templates/carousel/views/template-fields.php:27
+msgid "Wrap"
+msgstr ""
+
+#: ../templates/grid/views/template-fields.php:19
+#: ../templates/masonry/views/editor-fields.php:19
+#: ../templates/masonry/views/template-fields.php:19
+msgid "Image Resize Mode"
+msgstr ""
+
+#: ../templates/grid/views/template-fields.php:34
+#: ../templates/masonry/views/template-fields.php:34
+msgid "Full Image Width"
+msgstr ""
+
+#: ../templates/grid/views/template-fields.php:42
+#: ../templates/masonry/views/template-fields.php:42
+msgid "Full Image Height"
+msgstr ""
+
+#: ../templates/grid/views/template-fields.php:50
+#: ../templates/masonry/views/template-fields.php:50
+msgid "Full Image Resize Mode"
+msgstr ""
+
+#: ../templates/masonry/views/editor-fields.php:34
+msgid "CSS Class"
+msgstr ""
+
+#: ../views/items.php:17
+msgid "Item Settings"
+msgstr ""
+
+#: ../views/items.php:20
+msgid "Caption"
+msgstr ""
+
+#: ../views/items.php:28
+msgid "Name"
+msgstr ""
+
+#: ../views/items.php:36
+msgid "Image Tag Settings"
+msgstr ""
+
+#: ../views/items.php:39
+msgid "Alt"
+msgstr ""
+
+#: ../views/items.php:47
+msgid "Title"
+msgstr ""
+
+#: ../views/items.php:56
+msgid "Template Settings"
+msgstr ""
+
+#: ../views/watermark.php:14
+msgid "Image"
+msgstr ""
+
+#: ../views/watermark.php:28
+msgid "Width"
+msgstr ""
+
+#: ../views/watermark.php:40
+msgid "Height"
+msgstr ""
+
+#: ../views/watermark.php:52
+msgid "Mode"
+msgstr ""

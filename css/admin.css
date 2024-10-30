@@ -1,0 +1,615 @@
+/* Gen */
+.morph-area-items:after,
+.morph-form-field:after,
+.morph-template-list:after,
+.clear-fix:after,
+.morph-resize-progress:after,
+.morph-dialog-field:after,
+.morph-watermark-settings .tab-head:after,
+.morph-watermark-settings .watermark-buttons:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clear {
+    clear: both;
+}
+
+/* Override metabox styles */
+.post-type-morph_gallery .postbox {
+    border-color:#C2C2C2;
+}
+.post-type-morph_gallery .postbox .hndle{
+    background: #FAFAFA;
+    border-color:#C2C2C2;
+}
+
+.morph-area-items,
+.morph-area-actions,
+.morph-dialog {
+    box-sizing: border-box;
+}
+.morph-area-items,
+.morph-area-actions {
+    padding: 15px;
+}
+.morph-area-main {
+    position: relative;
+}
+.morph-area-items {
+    background: #eeeeee;
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    left: 0;
+    top: 0;
+    border-right: 1px solid #D3D3D3;
+    overflow: auto;
+}
+.morph-area-editor {
+    padding-left: 60%;
+    min-height: 355px;
+}
+.morph-area-actions {
+    clear: both;
+    border-top: 1px solid #D3D3D3;
+}
+.morph-item,
+.morph-item-placeholder{
+     width: 150px;
+     height: 150px;
+     float: left;
+     margin: 0 15px 15px 0;
+ }
+.morph-item-placeholder{
+    border:3px dashed #CCCCCC;
+}
+.morph-item {
+    position: relative;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 0 1px rgba(0,0,0,0.1), 0 2px 1px rgba(0,0,0,0.1);
+    border:3px solid transparent;
+}
+.morph-item-selected {
+    border-color: dodgerblue;
+}
+.morph-item img {
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.morph-preview {
+    display: none;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+.morph-gallery-items-selected .morph-preview{
+    display: block;
+}
+.morph-preview img{
+    display: none;
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+/* WP selectors modify */
+#misc-publishing-actions,
+#minor-publishing-actions {
+    display: none;
+}
+#morph-gallery-items-box .inside,
+#morph-gallery-templates .inside,
+#morph-gallery-publish .inside {
+    padding: 0;
+    margin: 0;
+}
+#morph-gallery-templates .inside{
+    background: #EEEEEE;
+}
+.morph-js-template  {
+    display: none;
+}
+#morph-gallery-items-box .morph-remove-item,
+#morph-gallery-items-box #morph-update-item {
+    display: none;
+}
+#morph-gallery-items-box.morph-gallery-items-selected .morph-remove-item,
+#morph-gallery-items-box.morph-gallery-items-selected #morph-update-item{
+    display: inline-block;
+}
+
+/* Editor fields */
+.morph-area-editor .fields {
+    padding: 20px 15px;
+}
+.morph-area-editor .field:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.morph-area-editor .field-group {
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+.morph-area-editor .field-group-label {
+    margin-bottom: 12px;
+    font-style: italic;
+}
+.morph-area-editor .field {
+    padding-bottom: 5px;
+}
+.morph-area-editor .label {
+    float: left;
+    width: 30%;
+    text-align: right;
+    padding-top: 3px;
+    margin-right: 5px;
+}
+.morph-area-editor .control {
+    float: left;
+    width: 50%;
+}
+.morph-area-editor .field input,
+.morph-area-editor .field textarea {
+    display: block;
+    margin: 0;
+}
+.morph-area-editor .field textarea {
+    min-height: 100px;
+}
+
+/* Templates */
+.morph-template-current {
+    float: left;
+    width: 30%;
+    border-right: 1px solid #d3d3d3;
+    background: #ffffff;
+    padding-bottom: 50px;
+}
+.morph-template-current-thumbnail {
+    padding: 15px;
+
+    text-align: center;
+}
+.morph-template-current-thumbnail img {
+    background: #CCCCCC;
+}
+.morph-template-current-name {
+    text-align: center;
+    font-size: 16px;
+    padding: 15px;
+}
+.morph-template-list {
+    float: left;
+    width: 60%;
+    list-style: none inside;
+    margin: 0;
+    padding: 15px 0 0 0;
+}
+.morph-template-list li {
+    float: left;
+    margin: 0 0 15px 15px;
+}
+.morph-template {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border:3px solid #CCCCCC;
+    position: relative;
+}
+.morph-template-chosen {
+    border-color: #1E90FF;
+}
+.morph-template input[type="radio"] {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: -1;
+}
+.morph-template-thumbnail {
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: #eeeeee;
+}
+.morph-template-name {
+    display: block;
+    padding:5px;
+}
+
+
+/* Template settings */
+.morph-dialog {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 600px;
+    transform: translate(-50%,-50%);
+    margin-top: 100px;
+    background: #fff;
+    z-index:-1;
+    opacity: 0;
+    transition: all 0.5s ease;
+    padding: 25px 0 0 0;
+}
+.morph-dialog-title {
+    margin: 0 0 20px 0;
+    padding: 0 25px;
+    font-size: 24px;
+}
+.morph-dialog.morph-show {
+    z-index: 100001;
+    opacity:1;
+    margin-top: 0;
+}
+.morph-modal {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0;
+    z-index: -2;
+    transition: all 0.5s ease;
+}
+.morph-modal.morph-show {
+    opacity: 0.9;
+    z-index: 100000;
+}
+.morph-dialog-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: none;
+    border: 0;
+    padding: 15px;
+    font-size: 18px;
+    color: #5d6d74;
+}
+
+/* Template fields */
+.morph-dialog-field {
+    padding: 0 25px;
+    margin-bottom: 10px;
+}
+.morph-dialog-field .label {
+    box-sizing: border-box;
+    float: left;
+    width: 40%;
+    padding-top: 2px;
+    padding-right: 10px;
+}
+.morph-dialog-field .control {
+    float: left;
+    width: 60%;
+}
+.morph-dialog-field label {
+    font-size: 13px;
+    line-height: 1.2;
+}
+.morph-dialog-field input[type="text"],
+.morph-dialog-field input[type="number"],
+.morph-dialog-field select {
+    width: 100%;
+    margin: 0;
+}
+.morph-dialog-field input[type="checkbox"] {
+    border-color: #dddddd;
+    margin: 5px 0 0 0;
+}
+
+.morph-dialog-footer {
+    padding: 12px 25px;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    text-align: right;
+}
+
+
+.morph-publish-buttons {
+    text-align: right;
+    padding: 15px 12px;
+}
+.morph-resize-progress {
+    padding: 15px 12px;
+}
+.morph-publish .button-danger {
+    background: #F44336;
+    color: #FFD4D1;
+    border-color: #D61B1B;
+    -webkit-box-shadow: inset 0 1px 0 #FF776D,0 1px 0 rgba(0,0,0,.08);
+    box-shadow: inset 0 1px 0 #FF776D,0 1px 0 rgba(0,0,0,.08);
+}
+.morph-publish .button-danger:hover,
+.morph-publish .button-danger:focus {
+    background: #FF594D;
+    color: #FFD4D1;
+    border-color: #D61B1B;
+}
+.morph-publish .button-secondary {
+    background: #4CAF50;
+    color: #EFFFEF;
+    border-color: #009A06;
+    -webkit-box-shadow: inset 0 1px 0 #8BC34A,0 1px 0 rgba(0,0,0,.08);
+    box-shadow: inset 0 1px 0 #8BC34A,0 1px 0 rgba(0,0,0,.08);
+}
+.morph-publish .button-secondary:hover,
+.morph-publish .button-secondary:focus {
+    background: #59b95c;
+    color: #EFFFEF;
+    border-color: #009A06;
+}
+.morph-resize-label {
+}
+.morph-resize-progress {
+    display: none;
+}
+.morph-resize-progress-bar {
+    position: relative;
+    height: 13px;
+    background: #e6e6e6;
+    border: 1px solid #bcbcbc;
+}
+.morph-resize-progress-bar > div {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: #0073AA;
+    transition: all 200ms ease;
+}
+
+.morph-pagination {
+    clear: both;
+    text-align: center;
+}
+
+/* Watermark settings */
+#morph-gallery-watermark .inside {
+    padding: 0;
+    margin: 0;
+}
+.morph-watermark-settings:after,
+.morph-watermark-settings .left:after,
+.morph-watermark-settings .field:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.morph-watermark-settings {
+    position: relative;
+}
+.morph-watermark-settings .inner {
+    padding: 0 20px;
+}
+.morph-watermark-settings .watermark-controls {
+    float: left;
+    width: 30%;
+    min-height:300px;
+    padding-bottom: 15px;;
+}
+.morph-watermark-settings .label {
+    float: left;
+    min-width: 60px;
+    max-width: 50%;
+    text-align: right;
+}
+.morph-watermark-settings label {
+    margin-right: 5px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+/* Form fields */
+.morph-watermark-settings input,
+.morph-watermark-settings select {
+    vertical-align: baseline;
+}
+.morph-watermark-settings input{
+    min-height: 28px;
+}
+.morph-watermark-settings .field {
+    padding-bottom: 5px;
+}
+.morph-watermark-settings .field-short {
+    width: 60px;
+}
+
+
+.morph-watermark-settings .control {
+    float: left;
+    width: 50%;
+}
+
+/* Playpen */
+.morph-watermark-settings .playpen {
+    background: #444444;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: 30%;
+}
+.morph-watermark-settings.upit .playpen{
+    background: #ccc;
+}
+.morph-watermark-settings .playpen img {
+    position: absolute;
+}
+
+.morph-watermark-settings .watermark-buttons {
+    text-align: center;
+    padding-top: 15px;
+}
+.morph-watermark-settings .button-group {
+    display: inline-block;
+}
+.morph-watermark-settings .button-group button{
+    color: #555555;
+    font-size: 14px;
+    padding: 8px;
+    background-color: #EEEEEE;
+    outline: none;
+    border: 1px solid #CCCCCC;
+    border-radius: 0 3px 3px 0;
+    float: left;
+    cursor: pointer;
+}
+.morph-watermark-settings .button-group button:hover,
+.morph-watermark-settings .button-group button:focus {
+    background: #ffffff;
+}
+.morph-watermark-settings .button-group button:active {
+    position: relative;
+    top: 1px;
+}
+.morph-watermark-settings .button-group button:active,
+.morph-watermark-settings .button-group button.active {
+    box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+}
+.morph-watermark-settings .watermark-buttons button:first-child {
+    border-radius: 3px 0 0 3px;
+    border-right: 0;
+}
+/* Cover */
+.morph-watermark-settings .cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.morph-watermark-settings .cover p {
+    padding: 20px;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.morph-watermark-settings .cover a {
+    text-decoration: none;
+}
+.morph-watermark-settings .cover:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
+    opacity: 0.6;
+    z-index: 9;
+}
+
+/* Tabs */
+.morph-watermark-settings .tabs .tab-body > div {
+    display: none;
+    padding: 10px 20px;
+}
+.morph-watermark-settings .tabs .tab-body > div.active{
+    display: block;
+}
+.morph-watermark-settings .tab-head > button {
+    float: left;
+    background: none;
+    display: block;
+    width: 50%;
+    border: 1px solid #dddddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.2;
+    cursor: pointer;
+    box-sizing: border-box;
+    box-shadow: inset 0 5px 15px #eeeeee;
+    border-width: 0 1px 1px 0;
+}
+.morph-watermark-settings .tab-head > button.active {
+    border-bottom-color: #ffffff;
+    box-shadow: none;
+    cursor: default;
+}
+.post-type-morph_gallery #poststuff .morph-watermark-settings h2{
+    font-size: 16px;
+    margin: 20px 0 20px 0;
+    padding: 8px 0;
+}
+.morph-watermark-settings h2 {
+    font-weight: normal;
+    background: none;
+    border-bottom: 1px dashed #cccccc;
+
+}
+.post-type-morph_gallery #poststuff .morph-watermark-settings h2:first-child {
+    margin-top: 0;
+}
+.morph-watermark-settings .position-holder{
+    text-align: center;
+}
+.morph-watermark-settings .position-pen {
+    width: 90px;
+    height: 90px;
+    margin: 20px auto;
+}
+.morph-watermark-settings .position-pen button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ffffff;
+    float: left;
+    outline: none;
+    transition: all 1s ease-out;
+    cursor: pointer;
+}
+.morph-watermark-settings .position-pen button:focus,
+.morph-watermark-settings .position-pen button:hover {
+    background: #1E90FF;
+}
+.morph-watermark-settings .position-pen button:focus {
+    position: relative;
+    box-shadow: 0 0 5px #1E90FF;
+}
+.morph-watermark-settings .position-pen button:active {
+    position: relative;
+    top: 1px;
+}
+.morph-watermark-settings .position-pen button.active {
+    background: #1E90FF;
+}
+
+.morph-logs ul {
+    list-style: inside disc;
+    display: none;
+    padding: 0 18px;
+    margin: 20px 0 50px;
+}
+.morph-logs.expand ul{
+    display: block;
+}
+.morph-logs button {
+    background: none;
+    border: 0;
+    color: #00a0d2;
+    cursor: pointer;
+}
